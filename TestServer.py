@@ -19,7 +19,7 @@ class MyServer(Server):
 
 
 if __name__ == "__main__":
-    myserver = MyServer()
+    myserver = MyServer(localaddr=("192.168.1.166", 5071))
     while True:
         # print("listening...")
         myserver.Pump()
